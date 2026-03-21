@@ -22,7 +22,6 @@ public class LibraryManager {
 
 
     private void seedInitialData() {
-        System.out.println("[System] กำลังสร้างข้อมูลตั้งต้น (Mock Data) สำหรับการทดสอบ...");
         // ข้อมูลหนังสือ
         items.add(new PhysicalBook("B01", "Java Programming", 3, 0, 0, "John Doe"));
         items.add(new PhysicalBook("B02", "Object-Oriented Design", 2, 0, 0, "Jane Smith"));
