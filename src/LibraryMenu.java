@@ -73,11 +73,10 @@ public class LibraryMenu {
         } else if (sub.equals("2")) {
             System.out.print("ชื่อผู้ใช้เดิม: ");
             String oldName = scanner.nextLine().trim();
-
+            System.out.println(); // แก้อาการ Terminal ค้าง รออะไรไม่รู้
             System.out.print("ชื่อผู้ใช้ใหม่: ");
             String newName = scanner.nextLine().trim();
             manager.editUsername(oldName, newName);
-
         } else {
             System.out.println("[ข้อผิดพลาด] เลือกคำสั่งไม่ถูกต้อง");
         }
@@ -132,6 +131,7 @@ public class LibraryMenu {
         } else if (sub.equals("3")) {
             System.out.print("รหัสที่ต้องการลบ: ");
             String deleteId = scanner.nextLine();
+            System.out.println(); // แก้อาการ Terminal ค้าง รออะไรไม่รู้
             manager.deleteItem(deleteId);
 
         } else {
